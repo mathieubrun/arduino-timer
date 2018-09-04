@@ -1,9 +1,9 @@
 // lcd_size=[24, 34, 9];
-lcd_size=[36, 48.80, 9];
+lcd_size=[38, 56, 11.2];
 
 battery_size=[50, 36, 12];
-box_size=[95, 74, 29];
-board_size=[box_size[0]-5, box_size[1]-5, 3];
+box_size=[95, 70, 25];
+board_size=[lcd_size[0] * 2 + 1, box_size[1]-5, 3];
 knob_h=15;
 knob_r=12.5;
 encoder_size=[15, 15, 15];
@@ -11,7 +11,7 @@ buzzer_r=8;
 buzzer_h=10;
 
 // battery
-translate([-battery_size[0]/2, -battery_size[1]/2, 0]) {
+translate([-box_size[0]/2, box_size[1]/2 - battery_size[1], 0]) {
     color("black", 0.2) cube(battery_size);
 }
 
@@ -33,8 +33,7 @@ translate([box_size[0]/2, 0, box_size[2]/2 - 3]) {
 }
 
 // buzzer
-// battery
-translate([-box_size[0]/2 + buzzer_r + 5, 0, box_size[2] - lcd_size[2] - board_size[2] - buzzer_h]) {
+translate([0, -box_size[1]/2 + buzzer_r + 5, box_size[2] - lcd_size[2] - board_size[2] - buzzer_h]) {
     color("black", 0.2) cylinder(buzzer_h, buzzer_r, buzzer_r);
 }
 

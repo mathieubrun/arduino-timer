@@ -23718,7 +23718,6 @@ OSHW_LOGO</description>
 <part name="IC1" library="parts" deviceset="ATMEGA328P" device=""/>
 <part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1" value="10k"/>
-<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-EU" device="E2.5-6" package3d_urn="urn:adsk.eagle:package:23349/1" value="100uF"/>
@@ -23730,6 +23729,7 @@ OSHW_LOGO</description>
 <part name="REG" library="parts" deviceset="VREG_STEP_UP" device="" value=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="OSHW-LOGO" device="L-COPPER" package3d_urn="urn:adsk.eagle:package:37117/1"/>
 <part name="U$1" library="parts" deviceset="DOG_LOGO" device=""/>
+<part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" package3d_urn="urn:adsk.eagle:package:23491/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -23785,7 +23785,6 @@ OSHW_LOGO</description>
 <instance part="IC1" gate="G$1" x="22.86" y="7.62"/>
 <instance part="GND1" gate="1" x="-134.62" y="22.86"/>
 <instance part="R1" gate="G$1" x="-25.4" y="22.86" rot="R90"/>
-<instance part="R2" gate="G$1" x="-134.62" y="43.18" rot="R270"/>
 <instance part="P+1" gate="VCC" x="-106.68" y="12.7"/>
 <instance part="GND10" gate="1" x="-106.68" y="-30.48"/>
 <instance part="C5" gate="G$1" x="-101.6" y="2.54"/>
@@ -23800,6 +23799,7 @@ OSHW_LOGO</description>
 <instance part="REG" gate="G$1" x="-73.66" y="-2.54"/>
 <instance part="LOGO1" gate="G$1" x="-88.9" y="73.66"/>
 <instance part="U$1" gate="G$1" x="-71.12" y="66.04"/>
+<instance part="R2" gate="G$1" x="-134.62" y="43.18" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -24004,7 +24004,7 @@ OSHW_LOGO</description>
 <segment>
 <wire x1="-134.62" y1="50.8" x2="-134.62" y2="48.26" width="0.1524" layer="91"/>
 <label x="-134.62" y="53.34" size="1.778" layer="95"/>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="XTAL1" class="0">
@@ -24341,10 +24341,10 @@ OSHW_LOGO</description>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
 <pinref part="BUZ" gate="G$1" pin="1"/>
 <wire x1="-127" y1="33.02" x2="-134.62" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="-134.62" y1="33.02" x2="-134.62" y2="38.1" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="VIN" class="0">

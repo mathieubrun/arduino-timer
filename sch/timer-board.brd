@@ -149,15 +149,15 @@
 <wire x1="76.2" y1="69.9008" x2="0" y2="69.9008" width="0" layer="20"/>
 <wire x1="0" y1="69.9008" x2="0" y2="0" width="0" layer="20"/>
 <polygon width="0.1524" layer="41">
-<vertex x="0" y="3.81"/>
-<vertex x="76.2" y="3.81"/>
+<vertex x="0" y="2.54"/>
+<vertex x="76.2" y="2.54"/>
 <vertex x="76.2" y="0"/>
 <vertex x="0" y="0"/>
 </polygon>
 <polygon width="0.1524" layer="41">
 <vertex x="0" y="69.85"/>
-<vertex x="0" y="66.04"/>
-<vertex x="76.2" y="66.04"/>
+<vertex x="0" y="67.31"/>
+<vertex x="76.2" y="67.31"/>
 <vertex x="76.2" y="69.85"/>
 </polygon>
 <circle x="64.77" y="38.1" radius="0.9144" width="0.2032" layer="42"/>
@@ -2450,10 +2450,10 @@ OSHW_LOGO</description>
 <contactref element="C4" pad="-"/>
 <contactref element="PWR" pad="1"/>
 <polygon width="0.2032" layer="16">
-<vertex x="0" y="66.04"/>
-<vertex x="0" y="3.81"/>
-<vertex x="76.2" y="3.81"/>
-<vertex x="76.2" y="66.04"/>
+<vertex x="0" y="67.31"/>
+<vertex x="0" y="2.54"/>
+<vertex x="76.2" y="2.54"/>
+<vertex x="76.2" y="67.31"/>
 </polygon>
 <contactref element="C3" pad="2"/>
 <contactref element="C6" pad="2"/>

@@ -1,0 +1,8 @@
+{
+    "workbench.colorCustomizations": {},
+    "files.exclude": {
+        "sch/*.b#?": true,
+        "sch/*.s#?": true,
+        "sch/*.zip": true
+    }
+}
